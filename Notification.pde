@@ -1,3 +1,6 @@
+// NOTIFICATION OBJECT ------------------------------------------------------------------------------------------------------------
+
+
 class Notification {
   
   public PImage notification;
@@ -6,15 +9,19 @@ class Notification {
   private float wid;
   private float len;
   private boolean active;
-  
-  Notification(float xp, float yp, float w, float l) {
-    xpos = xp;
+ 
+// Constructor ----------------------------------------------------------------------------------- 
+
+  Notification(float xp, float yp, float w, float l) {         // Takes the same 4 arguments as an image would
+    xpos = xp;                                                 // Sets arguments as class parameters
     ypos = yp;
     wid = w;
     len = l;
-    notification = loadImage("notification.png");
-    active = false;
+    notification = loadImage("notification.png");              // Load image
+    active = false;                                            // Set active as false
   }
+  
+// GETTERS ---------------------------------------------------------------------------------------  
   
   float getXPos() {
     return xpos;
@@ -35,10 +42,11 @@ class Notification {
   boolean getActive() {
     return active;
   }
-  
-  void drawNotification() {
-    image(notification, xpos, ypos, wid, len);
-    active = true;
+
+// DRAW NOTIFICATION FUNCTION ----------------------------------------------------------------------
+  void drawNotification() {                           
+    image(notification, xpos, ypos, wid, len);        // Draw 'notification' at (xpos, ypos) with dimensions (wid/len)
+    active = true;                                    // Set notification's active as true
   }
   
   boolean checkIfClicked() 

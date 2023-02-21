@@ -3,7 +3,7 @@
 */
 
 // Variables
-color backgroundColor = color(188, 220, 255);
+color backgroundColor = color(188, 220, 255);        // Background colour
 
 int totalNotifications = 20;
 int notificationCounter = 0;

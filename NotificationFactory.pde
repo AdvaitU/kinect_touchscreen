@@ -1,10 +1,10 @@
 class NotificationFactory {
   
-  NotificationFactory() {}
+  NotificationFactory() {}    // Empty Constructor
   
-  Notification createNotification() {
+  Notification createNotification() {     // Function of return type Notification, no arguments
     
-    float rand1 = random(1); 
+    float rand1 = random(1);              // Randomise (x,y) to create notification at
     float rand2 = random(1); 
     float wid = constrain(rand1 * 80., 90., 100.);
     float len = constrain(rand2 * 70., 60., 70.);
