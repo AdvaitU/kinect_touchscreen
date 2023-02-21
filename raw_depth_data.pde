@@ -15,7 +15,7 @@ int rightEdge = 0;
 int topEdge = 0;              // Variables for y-axis threshold
 int bottomEdge = 0;
 
-
+/*
 // ----------------------------------------- MAIN SETUP FUNCTION ---------------------------------------------//
 
 void setup() {
@@ -60,3 +60,4 @@ void draw() {
   image(img, 0, 0);           // Draw the image at (0,0)
   
 }
+*/
